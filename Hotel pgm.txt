@@ -1,0 +1,212 @@
+package com.company;
+import java.util.Scanner;
+
+public class Main {
+    static Scanner input = new Scanner(System.in);
+
+    public static void main(String args[]) throws Exception
+    {
+        System.out.println("Welcome to dwiggy \t Are you hungery...\n");
+        System.out.println("Enter your Hotel ");
+        System.out.println("1.Taj Hotel\n2.S.S Hydrabed\n3.Buhari\n4.A2B");
+        int hotelnum=input.nextInt();
+
+        switch (hotelnum){
+            case 1:{
+                System.out.println("Thanks you for selecting Taj Hotel");
+                System.out.println("Enter your dish");
+                System.out.println("1.Chicken biriyani\n2.Mutton Biriyani\n3.Rabbit Biriyani\n4.Prawn Biriyani");
+                int dishnumber=input.nextInt();
+
+                switch (dishnumber){
+                    case 1:{
+                        System.out.println("you ordered chicken biriyani");
+                        break;
+                    }
+                    case 2:{
+                        System.out.println("you ordered Mutton biriyani");
+                        break;
+                    }
+                    case 3:{
+                        System.out.println("you ordered Rabbit biriyani");
+                        break;
+                    }
+                    case 4:{
+                        System.out.println("you ordered prawn biriyani");
+                        break;
+                    }
+                    default:{
+                        System.out.println("Please enter correct dishnumber");
+                        break;
+                    }
+                }
+                break;
+            }
+            case 2:{
+                System.out.println("Thanks you for selecting S.S Hydrabed");
+                System.out.println("Enter your dish");
+                System.out.println("1.Chicken biriyani\n2.Mutton Biriyani\n3.Rabbit Biriyani\n4.Prawn Biriyani");
+                int dishnumber=input.nextInt();
+                switch (dishnumber){
+                    case 1:{
+                        System.out.println("you ordered chicken biriyani");
+                        break;
+                    }
+                    case 2:{
+                        System.out.println("you ordered Mutton biriyani");
+                        break;
+                    }
+                    case 3:{
+                        System.out.println("you ordered Rabbit biriyani");
+                        break;
+                    }
+                    case 4:{
+                        System.out.println("you ordered prawn biriyani");
+                        break;
+                    }
+                    default:{
+                        System.out.println("Please enter correct dishnumber");
+                        break;
+                    }
+                }
+                break;
+            }
+            case 3:{
+                System.out.println("Thanks you for selecting Buhari");
+                System.out.println("Enter your dish");
+                System.out.println("1.Chicken biriyani\n2.Mutton Biriyani\n3.Rabbit Biriyani\n4.Prawn Biriyani");
+                int dishnumber=input.nextInt();
+                switch (dishnumber){
+                    case 1:{
+                        System.out.println("you ordered chicken biriyani");
+                        break;
+                    }
+                    case 2:{
+                        System.out.println("you ordered Mutton biriyani");
+                        break;
+                    }
+                    case 3:{
+                        System.out.println("you ordered Rabbit biriyani");
+                        break;
+                    }
+                    case 4:{
+                        System.out.println("you ordered prawn biriyani");
+                        break;
+                    }
+                    default:{
+                        System.out.println("Please enter correct dishnumber");
+                        break;
+                    }
+                }
+                break;
+            }
+            case 4:{
+                System.out.println("Thanks you for selecting A2B");
+                System.out.println("Enter your dish");
+                System.out.println("1.Chicken biriyani\n2.Mutton Biriyani\n3.Rabbit Biriyani\n4.Prawn Biriyani");
+                System.out.println("please enter");
+                int dishnumber=input.nextInt();
+
+                switch (dishnumber){
+                    case 1:{
+                        System.out.println("you ordered chicken biriyani");
+                        break;
+                    }
+                    case 2:{
+                        System.out.println("you ordered Mutton biriyani");
+                        break;
+                    }
+                    case 3:{
+                        System.out.println("you ordered Rabbit biriyani");
+                        break;
+                    }
+                    case 4:{
+                        System.out.println("you ordered prawn biriyani");
+                        break;
+                    }
+                    default:{
+                        System.out.println("Please enter correct dishnumber");
+                        break;
+                    }
+                }
+                break;
+            }
+        }
+
+        System.out.println("Enter the Quantity");
+        int quantity=input.nextInt();
+
+        int per_plate=120;
+
+        double bill=quantity*per_plate;
+
+        System.out.println("your total amount bill:"+bill);
+        Thread.sleep(3000);
+
+        System.out.println("select your payment mood");
+        Thread.sleep(2000);
+        System.out.println("1.Google-pay\n2.Phone-pay");
+        int payment=input.nextInt();
+
+        System.out.println("enter you bill amount");
+        double amount=input.nextDouble();
+        if (bill==amount){
+            System.out.println("wait for otp");
+            Thread.sleep(3000);
+            double ot=9999*Math.random()+9999;
+            int otp=(int) ot;
+            System.out.println(otp);
+            int user_otp=input.nextInt();
+            if (otp==user_otp){
+                System.out.println("verification successfully");
+                System.out.println("thanks for ordering");
+                System.out.println("you ordered within 10mins");
+            }
+            else {
+                System.out.println("incorrect OTP");
+            }
+        }
+else {
+            System.out.println("please enter correct amount");
+        }
+
+    }
+}
+
+op:
+
+Welcome to dwiggy 	 Are you hungery...
+
+Enter your Hotel 
+1.Taj Hotel
+2.S.S Hydrabed
+3.Buhari
+4.A2B
+4
+Thanks you for selecting A2B
+Enter your dish
+1.Chicken biriyani
+2.Mutton Biriyani
+3.Rabbit Biriyani
+4.Prawn Biriyani
+please enter
+1
+you ordered chicken biriyani
+Enter the Quantity
+5
+your total amount bill:600.0
+select your payment mood
+1.Google-pay
+2.Phone-pay
+2
+enter you bill amount
+600
+wait for otp
+17080
+17080
+verification successfully
+thanks for ordering
+you ordered within 10mins
+
+
+
